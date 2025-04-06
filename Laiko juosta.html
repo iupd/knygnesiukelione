@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Laiko juosta</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #d3d3d3;
+            font-family: Helvetica, sans-serif;
+        }
+
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+       
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #f08080;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+      
+        .left {
+            left: 0;
+        }
+
+        
+        .right {
+            left: 50%;
+        }
+
+        
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: black;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+       
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: #f08080;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        
+        .right::after {
+            left: -16px;
+        }
+
+        
+        .content {
+            padding: 20px 30px;
+            background-color: #f08080;
+            position: relative;
+            border-radius: 6px;
+        }
+
+       
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+        
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+             
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: black;
+            }
+
+            .left::after, .right::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+
+        
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            background-color: #d3d3d3;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #f08080;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #90ee90;
+            transform: scale(1.05);
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<header>
+    <a href="index.html">
+        <img src="logo5.jpg" title="Knygnešių pėdomis">
+    </a>
+</header>
+
+<hr>
+
+<nav>
+    <table cellspacing="5" cellpadding="5">
+        <tr>
+            <td><a href="index.html" class="nav-btn">Namai</a></td>
+            <td><a href="Laiko juosta.html" class="nav-btn">Laiko juosta</a></td>
+            <td><a href="Knygnešių kelionė.html" class="nav-btn">Knygnešių kelionė</a></td>
+            <td><a href="Knygnešiai.html" class="nav-btn">Knygnešiai</a></td>
+            <td><a href="Iššifruok.html" class="nav-btn">Iššifruok!</a></td>
+            <td><a href="Suzinok daugiau.html" class="nav-btn">Sužinok daugiau</a></td>
+        </tr>
+    </table>
+</nav>
+
+<style>
+    .nav-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        background-color:#f08080;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .nav-btn:hover {
+        background-color:#90ee90;
+        transform: scale(1.05);
+    }
+
+    table {
+        margin: auto;
+    }
+
+    td {
+        padding: 5px;
+    }
+</style>
+<hr>
+<div class="timeline">
+    <div class="container left">
+        <div class="heading">Spaudos draudimas (1864 m.)</div>
+        <div class="content">
+            <p>Po 1863 m. sukilimo prieš Rusijos valdžią buvo uždrausta lietuviška spauda lotyniškais rašmenimis. Lietuviai negalėjo spausdinti ir skaityti knygų savo kalba.</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="heading">Knygnešių veikla (1864–1904 m.)</div>
+        <div class="content">
+            <p>Knygnešiai slapta gabeno lietuviškas knygas iš Prūsijos (dabar Vokietija) į Lietuvą. Jie nešė knygas per sieną, slėpė jas ir platino žmonėms.</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="heading">Slaptos mokyklos</div>
+        <div class="content">
+            <p>Kadangi mokyklose buvo mokoma tik rusiškai, lietuviai kūrė slaptas mokyklas, kuriose vaikai mokėsi lietuviškai skaityti ir rašyti. Mokytojai buvo vadinami daraktoriais.</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="heading">Kova su knygnešiais</div>
+        <div class="content">
+            <p>Rusijos valdžia persekiojo knygnešius, jie galėjo būti nubausti kalėjimu ar ištremti į Sibirą. Nepaisant to, knygnešiai tęsė savo veiklą.</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="heading">Spaudos draudimo panaikinimas (1904 m.)</div>
+        <div class="content">
+            <p>Po 40 metų spaudos draudimas buvo atšauktas. Lietuviai vėl galėjo spausdinti ir skaityti knygas savo kalba.</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="heading">Knygnešių atminimas</div>
+        <div class="content">
+            <p>Šiandien knygnešiai laikomi didvyriais. 1997 m. Lietuvoje kovo 16-oji paskelbta Knygnešio diena, skirta jų atminimui.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
