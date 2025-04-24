@@ -39,6 +39,7 @@
             font-size: 16px;
             border-radius: 8px;
             transition: background-color 0.3s, transform 0.2s;
+            white-space: nowrap;
         }
 
         .nav-btn:hover {
@@ -46,11 +47,13 @@
             transform: scale(1.05);
         }
 
-        nav {
+        .nav-container {
             overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 10px;
         }
 
-        table {
+        nav table {
             margin: auto;
             white-space: nowrap;
         }
@@ -71,7 +74,7 @@
 
     <hr>
 
-    <nav>
+    <nav class="nav-container">
         <table cellspacing="5" cellpadding="5">
             <tr>
                 <td><a href="index.html" class="nav-btn">Namai</a></td>
