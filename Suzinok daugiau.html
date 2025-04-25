@@ -20,20 +20,32 @@
     }
 
     .nav-btn {
-        display: inline-block;
-        padding: 10px 15px;
-        text-decoration: none;
-        background-color: #f08080;
-        color: white;
-        font-size: 16px;
-        border-radius: 8px;
-        transition: background-color 0.3s, transform 0.2s;
-    }
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #f08080;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            white-space: nowrap;
+        }
 
-    .nav-btn:hover {
-        background-color: #90ee90;
-        transform: scale(1.05);
-    }
+        .nav-btn:hover {
+            background-color: #90ee90;
+            transform: scale(1.05);
+        }
+
+        .nav-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 10px;
+        }
+
+        nav table {
+            margin: auto;
+            white-space: nowrap;
+        }
 
     table {
         margin: auto;
