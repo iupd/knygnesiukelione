@@ -172,21 +172,35 @@
             background-color: #d3d3d3;
         }
 
-        .nav-btn {
-            display: inline-block;
-            padding: 10px 15px;
-            text-decoration: none;
-            background-color: #f08080;
-            color: white;
-            font-size: 16px;
-            border-radius: 8px;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+        .nav-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
 
-        .nav-btn:hover {
-            background-color: #90ee90;
-            transform: scale(1.05);
-        }
+nav table {
+    margin: auto;
+    white-space: nowrap;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #f08080;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+}
+
+.nav-btn:hover {
+    background-color: #90ee90;
+    transform: scale(1.05);
+}
+    
 
         table {
             margin: auto;
@@ -211,18 +225,18 @@
         }
     </style>
 </head>
-    <nav>
-        <table cellspacing="5" cellpadding="5">
-            <tr>
-                <td><a href="index.html" class="nav-btn">Namai</a></td>
-                <td><a href="Laiko juosta.html" class="nav-btn">Laiko juosta</a></td>
-                <td><a href="Knygnešių kelionė.html" class="nav-btn">Knygnešių kelionė</a></td>
-                <td><a href="Knygnešiai.html" class="nav-btn">Knygnešiai</a></td>
-                <td><a href="Iššifruok.html" class="nav-btn">Iššifruok!</a></td>
-                <td><a href="Suzinok daugiau.html" class="nav-btn">Sužinok daugiau</a></td>
-            </tr>
-        </table>
-    </nav>
+<nav class="nav-container">
+    <table cellspacing="5" cellpadding="5">
+        <tr>
+            <td><a href="index.html" class="nav-btn">Namai</a></td>
+            <td><a href="Laiko juosta.html" class="nav-btn">Laiko juosta</a></td>
+            <td><a href="Knygnešių kelionė.html" class="nav-btn">Knygnešių kelionė</a></td>
+            <td><a href="Knygnešiai.html" class="nav-btn">Knygnešiai</a></td>
+            <td><a href="Iššifruok.html" class="nav-btn">Iššifruok!</a></td>
+            <td><a href="Suzinok daugiau.html" class="nav-btn">Sužinok daugiau</a></td>
+        </tr>
+    </table>
+</nav>
 
     <hr>
     <p> Dabar jūs matote, kokiais keliais knygnešiai nešė knygas. Galite pamatyti kelis populiariausius kelius. Vieną iš
